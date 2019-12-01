@@ -21,17 +21,17 @@ As in previous interviews, you may consult official docs and reference-style res
 - Install the dependencies for the project
   - npm install
 - Ensure your PostgreSQL server is running
- - pg_ctl start
+  - pg_ctl start
 - Create a User for this exercise
- - createuser --interactive owner
- - createuser = command
- - ineractive
+  - createuser --interactive owner
+  - createuser = command
+  - ineractive
     - Shall the new role be a superuser? (y/n) n
     - Shall the new role be allowed to create databases? (y/n) y
     - Shall the new role be allowed to create more new roles? (y/n) n
- - owner = username 
+  - owner = username 
 - Create a database for the exercise with your user as the owner
- - createdb --owner=owner todo
+  - createdb --owner=owner todo
 - Rename the `example.env` file to `.env` and update the following fields with your database credentials:
   ```
    MIGRATION_DB_NAME=
